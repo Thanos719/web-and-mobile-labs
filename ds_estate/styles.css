@@ -1,0 +1,253 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #013d0d;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background: #ee1010;
+    border-radius: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Form styles */
+.auth-container, .create-listing-container, .book-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-container img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #202020;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #272727;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #f10909;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.auth-container p, .create-listing-container p, .book-container p {
+    text-align: center;
+}
+
+.auth-container a, .create-listing-container a, .book-container a {
+    color: #2c2d2d;
+    text-decoration: none;
+}
+
+.auth-container a:hover, .create-listing-container a:hover, .book-container a:hover {
+    text-decoration: underline;
+}
+
+.final-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007b00;
+    text-align: center;
+}
+
+/* Property listing styles */
+.feed-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.property {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.property img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property h2, .property p {
+    margin: 10px;
+}
+
+.property button {
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+/* Footer styles */
+footer {
+    background: #023d12;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info, .map {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-info p, .map p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map iframe {
+    width: 300px;
+    height: 200px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .map {
+        width: 90%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav-links.mobile-active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
